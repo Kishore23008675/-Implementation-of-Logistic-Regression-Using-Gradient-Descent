@@ -34,12 +34,12 @@ import numpy as np
 dataset=pd.read_csv('Placement_Data.csv')
 dataset
 ```
-
+```
 dataset=dataset.drop('sl_no',axis=1)
 dataset=dataset.drop('salary',axis=1)
+```
 
-
-
+```
 dataset["gender"]=dataset["gender"].astype('category')
 dataset["ssc_b"]=dataset["ssc_b"].astype('category')
 dataset["hsc_b"]=dataset["hsc_b"].astype('category')
@@ -49,7 +49,7 @@ dataset["specialisation"]=dataset["specialisation"].astype('category')
 dataset["status"]=dataset["status"].astype('category') 
 dataset["hsc_s"]=dataset["hsc_s"].astype('category')
 dataset.dtypes
-
+```
 
 
 dataset["gender"]=dataset["gender"].cat.codes
