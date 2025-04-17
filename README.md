@@ -97,21 +97,21 @@ print("Accuracy:",accuracy)
 print(y_pred)
 ```
 
-
+```
 print(Y)
+```
 
-
-
+```
 xnew= np.array([[0,87,0,95,0,2,78,2,0,0,1,0]])
 y_prednew=predict(theta,xnew)
 print(y_prednew)
+```
 
-
-
+```
 xnew= np.array([[0,0,0,0,0,2,8,2,0,0,1,0]])
 y_prednew=predict(theta,xnew)
 print(y_prednew)
-
+```
 
 ## Output:
 
