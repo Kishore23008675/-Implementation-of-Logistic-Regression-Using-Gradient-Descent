@@ -51,7 +51,7 @@ dataset["hsc_s"]=dataset["hsc_s"].astype('category')
 dataset.dtypes
 ```
 
-
+```
 dataset["gender"]=dataset["gender"].cat.codes
 dataset["ssc_b"]=dataset["ssc_b"].cat.codes
 dataset["hsc_b"]=dataset["hsc_b"].cat.codes
@@ -61,14 +61,14 @@ dataset["specialisation"]=dataset["specialisation"].cat.codes
 dataset["status"]=dataset["status"].cat.codes
 dataset["hsc_s"]=dataset["hsc_s"].cat.codes
 dataset
+```
 
-
-
+```
 X=dataset.iloc[:, :-1].values
 Y=dataset.iloc[:, -1].values
 Y
-
-
+```
+```
 theta = np.random.randn(X.shape[1])
 y=Y
 def sigmoid(z):
@@ -91,11 +91,11 @@ def predict(theta,X):
 y_pred = predict(theta,X)
 accuracy = np.mean(y_pred.flatten()==y)
 print("Accuracy:",accuracy)
+```
 
-
-
+```
 print(y_pred)
-
+```
 
 
 print(Y)
