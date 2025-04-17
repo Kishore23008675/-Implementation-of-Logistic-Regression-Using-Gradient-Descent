@@ -26,6 +26,7 @@ RegisterNumber: 212223110022
 */
 import pandas as pd
 import numpy as np
+```
 dataset=pd.read_csv('Placement_Data.csv')
 dataset
 dataset=dataset.drop('sl_no',axis=1)
